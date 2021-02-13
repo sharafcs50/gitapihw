@@ -1,14 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf8" />
-    <title>your project name</title>
-
-    <link href="./public/style.css" rel="stylesheet" />
-  </head>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <title>Portfolio</title> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />  
+    <link rel="stylesheet" href="public/style.css">
   <body>
-    <div id="user-interface"></div>
+
+      <!--Header , logo and navigation bar -->
+      <header>
+        <a href="#" class="logo">Portfolio</a>
+        <div class="toggle" id ="toggleMenu"></div>
+        <ul class="nav-bar">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#contact">Contact</a></li>
+          
+        </ul>
+      </header>
+  
+      <!--Home section  -->
+      <section class="first-ban" id="home">
+        <div class="text-box">
+          <h2>Hello, I am <br><br><span>Sharaf</span> </h2><br>
+          <h3>I'm learning to be a web developer</h3>
+          <a href="#about" class="btn">About Me</a>
+        </div>
+  
+        <!--About  section  -->
+      </section>
+      <section class="about" id="about">
+        <div class="head">
+          <h2>About Me</h2>        
+        </div>
+        <div class="text">
+          <div class="text-content text-second">
+            <h3>I am a Web developer</h3><br><br> 
+            <p>
+              I am a <span class="text-important">beginner</span>, my main concern is building Creative websites
+              using  clean and efficient code. <br><br>
+              <span class="text-important">Web-Design</span> : Figma.<br><br>
+              <span class="text-important">Front-End</span> :  HTML, CSS, and JavaScript. <br><br> 
+              <span class="text-important">Back-End</span> : JavaScript. <br><br>
+              I am also very interested in <span class="text-important">Movies</span><br>
+ 
+            </p>
+          </div>
+          <div class="text-second">
+            <img class="img" src="public/assests/pexels-photo-848117.jpeg" alt="keyboard" height="700px" width="1000px">
+          </div>
+        </div>
+      </section>
+      
+           <!--Services section  -->
+    <section class="services " id="services">
+      <div class="head white">
+        <h2>Services</h2>  
+        <p>
+          My main work in web design, web development and coding with Javascript.
+           
+        </p>      
+      </div>
+      <div class="text-content">
+          <div class="servicesBox">
+            <img src="public/assests/icon1.png" alt="">
+            <h2>Web Design</h2>
+            <p>
+              Creative stylish websites and application using Figma.
+            </p>
+          </div>
+          <div class="servicesBox">
+            <img src="public/assests/icon2.png" alt="">
+            <h2>Websites</h2>
+            <p>
+              Working on both Front-End and Back-End.
+            </p>
+          </div>
+          <div class="servicesBox">
+            <img src="public/assests/icon3.png" alt="">
+            <h2>Applications</h2>
+            <p>
+              Building Application mainly using JavaScript.
+            </p>
+          </div>
+      </div>
+
+    </section>
+
+       <!--Work section  -->
+     
+       <section class="work" id="work">
+        <div class="head">
+          <h2>Work</h2>  
+          <p>
+            Here, you can find some of my work, to view more please <span class="text-important"> go to my GitHuB account </span> by clicking the button bellow! 
+             
+          </p>      
+        </div>
+         <div class="projects" id="projects"></div>          
+       
+        <div class="head">
+          <a href="https://github.com/sharacs50?tab=repositories"  target="_blank" class="btn">View More ON MY GITHUB</a>
+        </div>
+      </section>
+
+             <!--Contact section  -->
+
+
+<section class="contact" id="contact">
+  <div class="head white">
+    <h2>Conatct Me</h2>
+    <p>
+      Feel Free to contact me and <span  class="text-important">let us make the world of programming better!</span>
+    </p>
+  </div>
+  <div class="text-content  display-content" >
+    <div class="contactInfo">
+      <h3>Contact Info</h3>
+      <div class="contactBox">
+        <div class="box">
+          <div class="icon">
+            <i  class="fa fa-map-marker"></i>
+          </div>
+          <div class="text">
+            <h3>Address</h3>
+            <p>Genk</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="icon">
+            <i  class="fa fa-phone"></i>
+          </div>
+          <div class="text">
+            <h3>Phone</h3>
+            <p>0032/496025359</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="icon">
+            <i  class="fa fa-envelope"></i>
+          </div>
+          <div class="text">
+            <h3>E-mail</h3>
+            <p>sharafanees@gmail.com</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    <div class="formBx">
+      <form >
+        <h3>Message Me</h3>
+        <input type="text" placeholder="Name">
+        <input type="email" placeholder="E-mail">
+        <textarea placeholder="Your Message"></textarea>
+        <input type="submit" value="Send">
+      </form>
+      
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-container">
+    <p>Copyright &copy; 2021 .All Rights Reserved</p>
+    <div class="soical-networks">
+      <a  target="_blank" href="https://github.com/sharafcs50"><i class="fab fa-github-square fa-2x "></i></a>      
+    </div>
+  </div>
+</footer>
 
     <!-- initialize your application -->
     <script type="module" src="./src/init/index.js"></script>
